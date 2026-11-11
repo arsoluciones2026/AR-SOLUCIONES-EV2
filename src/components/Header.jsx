@@ -1,1 +1,18 @@
-export default function Header(){return <header className="topbar"><div className="container d-flex align-items-center justify-content-between gap-3 py-3"><a className="brand text-decoration-none" href="#inicio"><span className="brand-symbol" aria-hidden="true">🦁</span><span><strong>A.R SOLUCIONES</strong><small>LA SEGURIDAD Y CONEXIÓN QUE NECESITAS</small></span></a><nav className="d-flex gap-3 align-items-center"><a className="nav-link text-light" href="#servicios">Servicios</a><a className="nav-link text-light" href="#catalogo">Catálogo</a></nav></div></header>}
+// Header contiene el nombre de la empresa y la navegación interna.
+export default function Header() {
+  return (
+    <header className="topbar">
+      <div className="container d-flex align-items-center justify-content-between gap-3 py-3">
+        {/* Los enlaces #id desplazan la vista a secciones de la misma página (SPA). */}
+        <a className="brand text-decoration-none" href="#inicio">
+          <span className="brand-symbol" aria-hidden="true">🦁</span>
+          <span><strong>A.R SOLUCIONES</strong><small>LA SEGURIDAD Y CONEXIÓN QUE NECESITAS</small></span>
+        </a>
+        <nav className="d-flex gap-3 align-items-center">
+          <a className="nav-link text-light" href="#servicios">Servicios</a>
+          <a className="nav-link text-light" href="#catalogo">Catálogo</a>
+        </nav>
+      </div>
+    </header>
+  );
+}

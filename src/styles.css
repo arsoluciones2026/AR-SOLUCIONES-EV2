@@ -1,1 +1,302 @@
-:root{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#eef7ff;background:#030712}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#09264b 0%,transparent 37%),radial-gradient(ellipse at 90% 40%,#230a39 0%,transparent 30%),#030712;color:#eef7ff}a{color:#60d9ff}.topbar{background:#030916ed;border-bottom:1px solid #0f79d0;box-shadow:0 0 24px #005cff36;position:relative;z-index:1}.brand{display:flex;gap:12px;align-items:center;color:#fff;min-width:0}.brand-symbol{display:grid;place-items:center;width:49px;height:49px;border:1px solid #22d5ff;border-radius:12px;background:#051a34;box-shadow:0 0 15px #008dff6b;font-size:27px}.brand strong{display:block;letter-spacing:.09em;font-size:16px;text-shadow:0 0 12px #007aff}.brand small{display:block;font-size:9px;letter-spacing:.09em;color:#7ddfff}.nav-link{font-size:14px;text-decoration:none}.nav-link:hover{color:#54dfff!important}.hero{margin-top:24px;border:1px solid #148cfa;border-radius:20px;overflow:hidden;background:#060c1b;box-shadow:0 0 28px #0078ff38}.hero-banner{width:100%;height:auto;display:block}.hero-content{padding:26px 35px 32px;background:linear-gradient(105deg,#06162d,#0a1125 65%,#1c0929)}.hero h1{font-size:clamp(1.5rem,3vw,2.4rem);max-width:850px}.hero h1 span{color:#49d9ff}.hero-copy{max-width:800px;color:#c0d4ea;line-height:1.7}.eyebrow,.section-kicker{color:#43d7ff;font-size:12px;letter-spacing:.16em;font-weight:800}.btn-primary{background:#007be8;border-color:#30bdff;box-shadow:0 0 12px #0095ff5c}.btn-primary:hover{background:#005db9}.service-card{border:1px solid #1460a0;border-radius:16px;padding:23px;background:linear-gradient(155deg,#10213b,#080e1d);box-shadow:inset 0 0 12px #0876ff17;min-height:100%}.service-card p{color:#b7c8dd;font-size:14px;line-height:1.7}.service-icon{font-size:30px}.service-pink{border-color:#ec27c2}.service-yellow{border-color:#f2cf16}.service-purple{border-color:#a245f6}.service-green{border-color:#20bb68}.catalog-section{padding-top:14px}.form-label{color:#d9e9fa;font-weight:600}.form-control,.form-select{background:#0b1b32;border:1px solid #266da3;color:#f5fbff}.form-control:focus,.form-select:focus{background:#0b1b32;color:#fff;border-color:#4dbaff;box-shadow:0 0 0 .2rem #188bda33}.form-control::placeholder{color:#95a9bd}.form-select option{background:#10253b;color:#fff}.results-count{color:#9db9d3;font-size:14px}.product-card{background:linear-gradient(150deg,#0b1b31,#090d1a);border:1px solid #195b95;border-radius:16px;overflow:hidden;transition:transform .2s,border-color .2s}.product-card:hover{transform:translateY(-3px);border-color:#30b5f5;box-shadow:0 0 16px #0095ff44}.product-image{height:190px;background:#e9eff4;display:grid;place-items:center}.product-image img{max-width:100%;max-height:175px;object-fit:contain}.category-label{text-transform:uppercase;color:#52c9ff;font-size:10px;font-weight:800;letter-spacing:.1em}.product-card h3{color:#eef7ff;min-height:38px}.price{font-size:21px;font-weight:800;color:#52c9ff}.text-muted{color:#a6bdd3!important}.empty-state{padding:45px 20px;text-align:center;border:1px dashed #375c79;border-radius:15px;color:#aac4dc}.footer{background:#050d1c;border-top:1px solid #185c9c;color:#a4bed5;font-size:13px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline}@media(max-width:700px){.hero{margin-top:14px}.hero-content{padding:22px 18px}.brand small{font-size:7px}.brand strong{font-size:12px}.brand-symbol{width:38px;height:38px;font-size:22px}.nav-link{font-size:12px}}
+/* ESTILOS GENERALES: colores, tipografías y fondo de A.R Soluciones. */
+:root {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #eef7ff;
+    background: #030712
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(ellipse at 15% 0%, #09264b 0%, transparent 37%), radial-gradient(ellipse at 90% 40%, #230a39 0%, transparent 30%), #030712;
+    color: #eef7ff
+}
+
+a {
+    color: #60d9ff
+}
+
+.topbar {
+    background: #030916ed;
+    border-bottom: 1px solid #0f79d0;
+    box-shadow: 0 0 24px #005cff36;
+    position: relative;
+    z-index: 1
+}
+
+.brand {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #fff;
+    min-width: 0
+}
+
+.brand-symbol {
+    display: grid;
+    place-items: center;
+    width: 49px;
+    height: 49px;
+    border: 1px solid #22d5ff;
+    border-radius: 12px;
+    background: #051a34;
+    box-shadow: 0 0 15px #008dff6b;
+    font-size: 27px
+}
+
+.brand strong {
+    display: block;
+    letter-spacing: .09em;
+    font-size: 16px;
+    text-shadow: 0 0 12px #007aff
+}
+
+.brand small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: .09em;
+    color: #7ddfff
+}
+
+.nav-link {
+    font-size: 14px;
+    text-decoration: none
+}
+
+.nav-link:hover {
+    color: #54dfff !important
+}
+
+.hero {
+    margin-top: 24px;
+    border: 1px solid #148cfa;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #060c1b;
+    box-shadow: 0 0 28px #0078ff38
+}
+
+.hero-banner {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+.hero-content {
+    padding: 26px 35px 32px;
+    background: linear-gradient(105deg, #06162d, #0a1125 65%, #1c0929)
+}
+
+.hero h1 {
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+    max-width: 850px
+}
+
+.hero h1 span {
+    color: #49d9ff
+}
+
+.hero-copy {
+    max-width: 800px;
+    color: #c0d4ea;
+    line-height: 1.7
+}
+
+.eyebrow,
+.section-kicker {
+    color: #43d7ff;
+    font-size: 12px;
+    letter-spacing: .16em;
+    font-weight: 800
+}
+
+.btn-primary {
+    background: #007be8;
+    border-color: #30bdff;
+    box-shadow: 0 0 12px #0095ff5c
+}
+
+.btn-primary:hover {
+    background: #005db9
+}
+
+.service-card {
+    border: 1px solid #1460a0;
+    border-radius: 16px;
+    padding: 23px;
+    background: linear-gradient(155deg, #10213b, #080e1d);
+    box-shadow: inset 0 0 12px #0876ff17;
+    min-height: 100%
+}
+
+.service-card p {
+    color: #b7c8dd;
+    font-size: 14px;
+    line-height: 1.7
+}
+
+.service-icon {
+    font-size: 30px
+}
+
+.service-pink {
+    border-color: #ec27c2
+}
+
+.service-yellow {
+    border-color: #f2cf16
+}
+
+.service-purple {
+    border-color: #a245f6
+}
+
+.service-green {
+    border-color: #20bb68
+}
+
+.catalog-section {
+    padding-top: 14px
+}
+
+.form-label {
+    color: #d9e9fa;
+    font-weight: 600
+}
+
+.form-control,
+.form-select {
+    background: #0b1b32;
+    border: 1px solid #266da3;
+    color: #f5fbff
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: #0b1b32;
+    color: #fff;
+    border-color: #4dbaff;
+    box-shadow: 0 0 0 .2rem #188bda33
+}
+
+.form-control::placeholder {
+    color: #95a9bd
+}
+
+.form-select option {
+    background: #10253b;
+    color: #fff
+}
+
+.results-count {
+    color: #9db9d3;
+    font-size: 14px
+}
+
+.product-card {
+    background: linear-gradient(150deg, #0b1b31, #090d1a);
+    border: 1px solid #195b95;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform .2s, border-color .2s
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    border-color: #30b5f5;
+    box-shadow: 0 0 16px #0095ff44
+}
+
+.product-image {
+    height: 190px;
+    background: #e9eff4;
+    display: grid;
+    place-items: center
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 175px;
+    object-fit: contain
+}
+
+.category-label {
+    text-transform: uppercase;
+    color: #52c9ff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .1em
+}
+
+.product-card h3 {
+    color: #eef7ff;
+    min-height: 38px
+}
+
+.price {
+    font-size: 21px;
+    font-weight: 800;
+    color: #52c9ff
+}
+
+.text-muted {
+    color: #a6bdd3 !important
+}
+
+.empty-state {
+    padding: 45px 20px;
+    text-align: center;
+    border: 1px dashed #375c79;
+    border-radius: 15px;
+    color: #aac4dc
+}
+
+.footer {
+    background: #050d1c;
+    border-top: 1px solid #185c9c;
+    color: #a4bed5;
+    font-size: 13px
+}
+
+.footer a {
+    text-decoration: none
+}
+
+.footer a:hover {
+    text-decoration: underline
+}
+
+@media(max-width:700px) {
+    .hero {
+        margin-top: 14px
+    }
+
+    .hero-content {
+        padding: 22px 18px
+    }
+
+    .brand small {
+        font-size: 7px
+    }
+
+    .brand strong {
+        font-size: 12px
+    }
+
+    .brand-symbol {
+        width: 38px;
+        height: 38px;
+        font-size: 22px
+    }
+
+    .nav-link {
+        font-size: 12px
+    }
+}
